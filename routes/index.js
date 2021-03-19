@@ -3,13 +3,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'School Project' });
+  res.render('layout', {
+    title: 'lab 2', body: 'Welcome to the Mighty Frogs home page, or as some would say: Beinvenue au Grand Marais'
+  });
 });
 router.get('/h', function (req, res, next) {
   res.render('index', { title: 'H' });
 });
-router.get('/users', function (req, res, next) {
-  res.render('users');
-});
+
 
 module.exports = router;
